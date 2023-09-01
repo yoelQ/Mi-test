@@ -3,26 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styless.css">
-    <title> Test De Procrastinacion </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Tu Test</title>
 </head>
 <body>
     <header>
-    <h1><i> Que es Procrastinar? </i></h1>
-   </header>
-    <p><i>La <b>procrastinación</b> se refiere al acto de retrasar o postergar tareas o actividades que deben realizarse, a menudo en favor de hacer algo más placentero o menos urgente. Es un comportamiento común que afecta a muchas personas en diferentes áreas de sus vidas, como el trabajo, los estudios, las tareas domésticas y otras responsabilidades.<br></br>
-        La procrastinación tambien suele estar asociada con la falta de motivación, la dificultad para concentrarse, la evitación de tareas desafiantes o aburridas, y la tendencia a dejar todo para el último momento. Aunque procrastinar ocasionalmente es normal, cuando se convierte en un patrón crónico de comportamiento, puede tener efectos negativos en la productividad, la calidad del trabajo y la salud emocional.<br></br>
-        Las causas de la procrastinación pueden variar y pueden estar relacionadas con factores psicológicos, emocionales o incluso hábitos de vida poco saludables. Para superar la procrastinación, es importante comprender por qué se está procrastinando y desarrollar estrategias para gestionar el tiempo y la motivación de manera más efectiva.</i></p>
-    <h2> aquí tienes algunas recomendaciones para ayudarte a procrastinar menos: </h2>
-    <ul>
-        <li> <b>Establece metas claras:</b> <p>Define claramente lo que deseas lograr antes de comenzar una tarea. Esto te ayudará a mantenerte enfocado y a comprender por qué la tarea es importante.</p></li>
-        <li> <b>Planifica tu día:</b> <p>Organiza tu día con una lista de tareas. Prioriza las tareas más importantes y aborda primero las que menos te gusten o que consideres más desafiantes.</p></li>
-        <li> <b>Elimina distracciones:</b> <p>Identifica las fuentes de distracción en tu entorno y trata de minimizarlas. Esto podría incluir apagar las notificaciones en tu dispositivo, bloquear sitios web no relacionados con el trabajo o estudios, o trabajar en un lugar tranquilo.</p></li>
-        <li> <b>Utiliza la técnica Pomodoro: </b> <p> Divide tu tiempo de trabajo en intervalos de 25 minutos de trabajo concentrado (llamados "Pomodoros") seguidos de un breve descanso de 5 minutos. Después de completar cuatro Pomodoros, toma un descanso más largo de 15-30 minutos. Esta técnica puede ayudarte a mantener la concentración y evitar la fatiga mental.</p></li>
-        <li> <b>Practica la autodisciplina:</b> <p>Cultiva la autodisciplina como un hábito. Aprende a decir "no" a las distracciones y comprométete a seguir tus planes y metas.        </p></li>
-    </ul>
-    <br></br>
-    <p>Haz <a href="Test/index.html">Click aqui</a> para comenzar el test</p>
-    
+        <h1> Test de Procrastinación </h1>
+        <p> Realiza el test de procrastinación ahora</p>
+    </header>
+    <div class ="container">
+        <section id="p0">
+            <h3>1.Cuando tienes una tarea importante por hacer y un plazo, ¿cómo sueles abordarla?</h3>
+            <label>
+                <input type="radio" value="a" name="p0" onclick="respuesta(0,this)"> a) Comienzo de inmediato y trabajo en ella de manera constante.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p0" onclick="respuesta(0,this)"> b) Espero hasta que el plazo se acerque antes de empezar.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p0" onclick="respuesta(0,this)"> c) Continuamente la pospongo y la hago en el último minuto.
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2.¿Cómo te sientes acerca de las tareas que has pospuesto en el pasado?</h3>
+            <label>
+                <input type="radio" value="a" name="p1" onclick="respuesta(1,this)"> a) Me siento satisfecho(a) con mi capacidad para completarlas.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p1" onclick="respuesta(1,this)"> b) Me siento un poco estresado(a) pero aún así las completo a tiempo.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p1" onclick="respuesta(1,this)"> c) Me siento culpable y frustrado(a) por dejarlas para el último minuto.
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3.¿Sueles hacer listas de tareas pendientes o planificar tu día con anticipación?</h3>
+            <label>
+                <input type="radio" value="a" name="p2" onclick="respuesta(2,this)"> a) Siempre planificado y sigo una lista de tareas.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p2" onclick="respuesta(2,this)"> b) A veces hago una lista, pero no siempre la sigo.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p2" onclick="respuesta(2,this)"> c) Raramente planifico ya menudo improviso.
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4.¿Cuándo enfrentas una tarea desafiante o aburrida, cómo la enfrentas?</h3>
+            <label>
+                <input type="radio" value="a" name="p3" onclick="respuesta(3,this)"> a) Me concentro en ella y la abordo de manera sistemática.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p3" onclick="respuesta(3,this)"> b) La pospongo un poco, pero finalmente la hago.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p3" onclick="respuesta(3,this)"> c) La evito tanto como sea posible y la hago en el último minuto.
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5.¿Cuál es tu actitud hacia los plazos de entrega?</h3>
+            <label>
+                <input type="radio" value="a" name="p4" onclick="respuesta(4,this)"> a) Los veo como oportunidades para mostrar mi capacidad de organización.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p4" onclick="respuesta(4,this)"> b) A veces me siento presionado(a), pero generalmente los cumplo.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p4" onclick="respuesta(4,this)"> c) Los ignora hasta que no puedo evitarlo.
+            </label>
+        </section>
+        <section id="p5">
+            <h3>6.¿Cómo te sientes cuando completas una tarea antes de tiempo?</h3>
+            <label>
+                <input type="radio" value="a" name="p5" onclick="respuesta(5,this)"> a) Me siento satisfecho(a) y motivado(a) para hacer más.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p5" onclick="respuesta(5,this)"> b) Me siento aliviado(a) pero no necesariamente emocionado(a).
+            </label>
+            <label>
+                <input type="radio" value="c" name="p5" onclick="respuesta(5,this)"> c) No recuerdo la última vez que terminó algo antes de tiempo.
+            </label>
+        </section>
+        <section id="p6">
+            <h3>7.¿Qué sueles hacer cuando tienes tiempo libre?</h3>
+            <label>
+                <input type="radio" value="a" name="p6" onclick="respuesta(6,this)"> a) Dedico tiempo a proyectos personales o actividades que me interesan.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p6" onclick="respuesta(6,this)"> b) Aprovecho el tiempo libre para relajarme, pero también trabajo en tareas pendientes.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p6" onclick="respuesta(6,this)"> c) Me relajo o procrastino aún más.
+            </label>
+        </section>
+       <button onclick="analizar()">Analizar</button>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <div data-bs-toggle=" modal" ></div>
+    <div id="mensajeResultado"></div>
+
+     
+    <a href="../index.html">Click para volver</a>
+   
+  
 </body>
 </html>
