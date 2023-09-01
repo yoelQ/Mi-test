@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Test</title>
+</head>
+<body>
+    <header>
+        <h1> Test de Procrastinación </h1>
+        <p> Realiza el test de procrastinación ahora</p>
+    </header>
+    <div class ="container">
+        <section id="p0">
+            <h3>1.Cuando tienes una tarea importante por hacer y un plazo, ¿cómo sueles abordarla?</h3>
+            <label>
+                <input type="radio" value="a" name="p0" onclick="respuesta(0,this)"> a) Comienzo de inmediato y trabajo en ella de manera constante.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p0" onclick="respuesta(0,this)"> b) Espero hasta que el plazo se acerque antes de empezar.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p0" onclick="respuesta(0,this)"> c) Continuamente la pospongo y la hago en el último minuto.
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2.¿Cómo te sientes acerca de las tareas que has pospuesto en el pasado?</h3>
+            <label>
+                <input type="radio" value="a" name="p1" onclick="respuesta(1,this)"> a) Me siento satisfecho/a con mi capacidad para completarlas.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p1" onclick="respuesta(1,this)"> b) Me siento un poco estresado/a pero aún así las completo a tiempo.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p1" onclick="respuesta(1,this)"> c) Me siento culpable y frustrado/a por dejarlas para el último minuto.
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3.¿Sueles hacer listas de tareas pendientes o planificar tu día con anticipación?</h3>
+            <label>
+                <input type="radio" value="a" name="p2" onclick="respuesta(2,this)"> a) Siempre planificado y sigo una lista de tareas.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p2" onclick="respuesta(2,this)"> b) A veces hago una lista, pero no siempre la sigo.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p2" onclick="respuesta(2,this)"> c) Raramente planifico ya menudo improviso.
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4.¿Cuándo enfrentas una tarea desafiante o aburrida, cómo la enfrentas?</h3>
+            <label>
+                <input type="radio" value="a" name="p3" onclick="respuesta(3,this)"> a) Me concentro en ella y la abordo de manera sistemática.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p3" onclick="respuesta(3,this)"> b) La pospongo un poco, pero finalmente la hago.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p3" onclick="respuesta(3,this)"> c) La evito tanto como sea posible y la hago en el último minuto.
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5.¿Cuál es tu actitud hacia los plazos de entrega?</h3>
+            <label>
+                <input type="radio" value="a" name="p4" onclick="respuesta(4,this)"> a) Los veo como oportunidades para mostrar mi capacidad de organización.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p4" onclick="respuesta(4,this)"> b) A veces me siento presionado(a), pero generalmente los cumplo.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p4" onclick="respuesta(4,this)"> c) Los ignora hasta que no puedo evitarlo.
+            </label>
+        </section>
+        <section id="p5">
+            <h3>6.¿Cómo te sientes cuando completas una tarea antes de tiempo?</h3>
+            <label>
+                <input type="radio" value="a" name="p5" onclick="respuesta(5,this)"> a) Me siento satisfecho(a) y motivado(a) para hacer más.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p5" onclick="respuesta(5,this)"> b) Me siento aliviado(a) pero no necesariamente emocionado(a).
+            </label>
+            <label>
+                <input type="radio" value="c" name="p5" onclick="respuesta(5,this)"> c) No recuerdo la última vez que terminó algo antes de tiempo.
+            </label>
+        </section>
+        <section id="p6">
+            <h3>7.¿Qué sueles hacer cuando tienes tiempo libre?</h3>
+            <label>
+                <input type="radio" value="a" name="p6" onclick="respuesta(6,this)"> a) Dedico tiempo a proyectos personales o actividades que me interesan.
+            </label>
+            <label>
+                <input type="radio" value="b" name="p6" onclick="respuesta(6,this)"> b) Aprovecho el tiempo libre para relajarme, pero también trabajo en tareas pendientes.
+            </label>
+            <label>
+                <input type="radio" value="c" name="p6" onclick="respuesta(6,this)"> c) Me relajo o procrastino aún más.
+            </label>
+        </section>
+       <button onclick="analizar()">Analizar</button>
+
+    </div>
+    <script src="script.js"></script>
+    <div id="mensajeResultado"></div>
+
+     
+    <a href="../index.html">Click para volver</a>
+   
+  
+</body>
+</html>
